@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9329106828FD928E00C9CAB7 /* transparent-silver-with-wood-bucket-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 9329106728FD928E00C9CAB7 /* transparent-silver-with-wood-bucket-0.png */; };
+		9329106A28FD946F00C9CAB7 /* BucketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9329106928FD946F00C9CAB7 /* BucketDetailView.swift */; };
+		9329106F28FD960900C9CAB7 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9329106E28FD960900C9CAB7 /* Utilities.swift */; };
+		9329107228FD987400C9CAB7 /* BucketListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9329107128FD987400C9CAB7 /* BucketListItem.swift */; };
 		9351F29828F5AA470087661E /* darynaDataCorrectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9351F29728F5AA470087661E /* darynaDataCorrectApp.swift */; };
 		9351F29A28F5AA470087661E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9351F29928F5AA470087661E /* ContentView.swift */; };
 		9351F29C28F5AA480087661E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9351F29B28F5AA480087661E /* Assets.xcassets */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9329106728FD928E00C9CAB7 /* transparent-silver-with-wood-bucket-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transparent-silver-with-wood-bucket-0.png"; sourceTree = "<group>"; };
+		9329106928FD946F00C9CAB7 /* BucketDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketDetailView.swift; sourceTree = "<group>"; };
+		9329106E28FD960900C9CAB7 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		9329107128FD987400C9CAB7 /* BucketListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListItem.swift; sourceTree = "<group>"; };
 		9351F29428F5AA470087661E /* darynaDataCorrect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = darynaDataCorrect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9351F29728F5AA470087661E /* darynaDataCorrectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = darynaDataCorrectApp.swift; sourceTree = "<group>"; };
 		9351F29928F5AA470087661E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,9 +79,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9329106B28FD95B800C9CAB7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9351F29B28F5AA480087661E /* Assets.xcassets */,
+				9329106E28FD960900C9CAB7 /* Utilities.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9329107028FD985700C9CAB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9329107128FD987400C9CAB7 /* BucketListItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9351F28B28F5AA470087661E = {
 			isa = PBXGroup;
 			children = (
+				9351F29728F5AA470087661E /* darynaDataCorrectApp.swift */,
 				9351F29628F5AA470087661E /* darynaDataCorrect */,
 				9351F2A728F5AA490087661E /* darynaDataCorrectTests */,
 				9351F2B128F5AA490087661E /* darynaDataCorrectUITests */,
@@ -94,10 +120,12 @@
 		9351F29628F5AA470087661E /* darynaDataCorrect */ = {
 			isa = PBXGroup;
 			children = (
-				9351F29728F5AA470087661E /* darynaDataCorrectApp.swift */,
+				9329107028FD985700C9CAB7 /* Model */,
 				9351F29928F5AA470087661E /* ContentView.swift */,
-				9351F29B28F5AA480087661E /* Assets.xcassets */,
+				9329106B28FD95B800C9CAB7 /* Resources */,
+				9329106728FD928E00C9CAB7 /* transparent-silver-with-wood-bucket-0.png */,
 				9351F29D28F5AA480087661E /* Preview Content */,
+				9329106928FD946F00C9CAB7 /* BucketDetailView.swift */,
 			);
 			path = darynaDataCorrect;
 			sourceTree = "<group>";
@@ -231,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9329106828FD928E00C9CAB7 /* transparent-silver-with-wood-bucket-0.png in Resources */,
 				9351F29F28F5AA480087661E /* Preview Assets.xcassets in Resources */,
 				9351F29C28F5AA480087661E /* Assets.xcassets in Resources */,
 			);
@@ -257,8 +286,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9329106A28FD946F00C9CAB7 /* BucketDetailView.swift in Sources */,
 				9351F29A28F5AA470087661E /* ContentView.swift in Sources */,
+				9329106F28FD960900C9CAB7 /* Utilities.swift in Sources */,
 				9351F29828F5AA470087661E /* darynaDataCorrectApp.swift in Sources */,
+				9329107228FD987400C9CAB7 /* BucketListItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
