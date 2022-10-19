@@ -10,19 +10,19 @@ import Foundation
 
 struct GradeAcess
 {
-    var Year : Int
+    var Year : Double
     var state : String
-    var math : Int
-    var takers : Int
-    var verbal : Int
-    var averageGpa : Int
-    var academicYears : Int
-    var AcademicGPA : Int
-    var englishGPA : Int
-    var foreignlanguageGPA : Int
-    var foreighnlanguageYears : Int
-    var mathGPA : Int
-    var mathYears : Int
-    var scienceGPA : Int
+    var math : Double
+    var takers : Double
+    var verbal : Double
+    var averageGpa : Double
+    var academicYears : Double
+    var AcademicGPA : Double
+    var englishGPA : Double
+    var foreignlanguageGPA : Double
+    var foreighnlanguageYears : Double
+    var mathGPA : Double
+    var mathYears : Double
+    var scienceGPA : Double
 
 }
