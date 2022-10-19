@@ -21,6 +21,8 @@
 		9351F2A928F5AA490087661E /* darynaDataCorrectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9351F2A828F5AA490087661E /* darynaDataCorrectTests.swift */; };
 		9351F2B328F5AA490087661E /* darynaDataCorrectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9351F2B228F5AA490087661E /* darynaDataCorrectUITests.swift */; };
 		9351F2B528F5AA490087661E /* darynaDataCorrectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9351F2B428F5AA490087661E /* darynaDataCorrectUITestsLaunchTests.swift */; };
+		936CCC7229004F6C00A94F13 /* simpleschoolscores.json in Resources */ = {isa = PBXBuildFile; fileRef = 936CCC7129004F6C00A94F13 /* simpleschoolscores.json */; };
+		936CCC7429004F7200A94F13 /* school_scores.json in Resources */ = {isa = PBXBuildFile; fileRef = 936CCC7329004F7200A94F13 /* school_scores.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		9351F2AE28F5AA490087661E /* darynaDataCorrectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = darynaDataCorrectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9351F2B228F5AA490087661E /* darynaDataCorrectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = darynaDataCorrectUITests.swift; sourceTree = "<group>"; };
 		9351F2B428F5AA490087661E /* darynaDataCorrectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = darynaDataCorrectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		936CCC7129004F6C00A94F13 /* simpleschoolscores.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = simpleschoolscores.json; sourceTree = "<group>"; };
+		936CCC7329004F7200A94F13 /* school_scores.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = school_scores.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 		9329106B28FD95B800C9CAB7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				936CCC7529004F7A00A94F13 /* Data */,
 				9351F29B28F5AA480087661E /* Assets.xcassets */,
 				9329106E28FD960900C9CAB7 /* Utilities.swift */,
 			);
@@ -186,6 +191,15 @@
 				9351F2B428F5AA490087661E /* darynaDataCorrectUITestsLaunchTests.swift */,
 			);
 			path = darynaDataCorrectUITests;
+			sourceTree = "<group>";
+		};
+		936CCC7529004F7A00A94F13 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				936CCC7129004F6C00A94F13 /* simpleschoolscores.json */,
+				936CCC7329004F7200A94F13 /* school_scores.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +306,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				936CCC7429004F7200A94F13 /* school_scores.json in Resources */,
+				936CCC7229004F6C00A94F13 /* simpleschoolscores.json in Resources */,
 				9329106828FD928E00C9CAB7 /* transparent-silver-with-wood-bucket-0.png in Resources */,
 				9351F29F28F5AA480087661E /* Preview Assets.xcassets in Resources */,
 				9351F29C28F5AA480087661E /* Assets.xcassets in Resources */,
