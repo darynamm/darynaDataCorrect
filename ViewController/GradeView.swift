@@ -20,9 +20,9 @@ struct GradeView: View
                 .padding()
             HStack
             {
-                Text("year: \n\(detailedGradeAccess.Year)")
+                Text("year: \n\(detailedGradeAccess.year)")
                     .accessibilityLabel("the year for the detailed grade access")
-                    .accessibilityValue("year:\n\(detailedGradeAccess.Year)")
+                    .accessibilityValue("year:\n\(detailedGradeAccess.year)")
                 VStack
                 {
                     Text("state: \n\(detailedGradeAccess.state)")

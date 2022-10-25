@@ -6,10 +6,16 @@
 //
 
 import Foundation
+//MARK: - Preview Values
+
 let demoBucket : BucketListItem = BucketListItem(year: 1999, goal: "Take over the world, narf!", creature: "pinky and the brain")
-let demoGrade : GradeAccess = GradeAccess( Year : 2019, state : "Salt lake", math : 2, takers : 23, verbal : 23, averageGpa : 3.0)
+let demoGrade : GradeAccess = GradeAccess( year : 2019, state : "Salt lake", math : 2, takers : 23, verbal : 23, averageGpa : 3.0)
+
+//MARK: - Internal URLS for files
 let randomInfoURL = Bundle.main.url(forResource: "", withExtension: "pdf")!
 let dataViolationsURL = Bundle.main.url(forResource: "", withExtension: "pdf")!
+
+//MARK: - Helper methods for random strings
 func generateRandomEmoji (of emojiType: String) -> String
 {
     let currentEmoji : String
@@ -57,4 +63,32 @@ func randomString() -> String
     {
         return "animal"
     }
+}
+//MARK: - Load JSON Data from device
+
+func loadJSON (from file : String) -> [Any]
+{
+    if let dataSourceURL = Bundle.main.url(forResource: file, withExtension: "json")
+    {
+        let data = try! Data(contentsOf: dataSourceURL)
+        let decoder = JSONDecoder()
+        do
+        {
+            if (file == "Buckets2022")
+            {
+                let results = try decoder.decode([BucketListItem].self, from: data)
+                return results
+            }
+            else if (file == "gradeAccessSimplified")
+            {
+                let results = try decoder.decode([GradeAccess].self, from: data)
+                return results
+            }
+        }
+        catch
+        {
+            print(error.localizedDescription)
+        }
+    }
+    return [Any]() //Major data load failure!!!!
 }

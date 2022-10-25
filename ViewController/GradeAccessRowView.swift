@@ -18,9 +18,9 @@ struct GradeAccessRowView: View {
             Spacer()
             VStack
             {
-                Text("\(rowGradeAccess.Year)")
+                Text("\(rowGradeAccess.year)")
                     .accessibilityLabel("the year for the grade data")
-                    .accessibilityValue("\n\(rowGradeAccess.Year)")
+                    .accessibilityValue("\n\(rowGradeAccess.year)")
                 Text("\(rowGradeAccess.math)")
                 Text("\(rowGradeAccess.takers)")
                 Text("\(rowGradeAccess.verbal)")

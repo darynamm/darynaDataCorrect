@@ -8,9 +8,9 @@
 import Foundation
 
 
-struct GradeAccess
+struct GradeAccess: Codable
 {
-    var Year : Int
+    var year : Int
     var state : String
     var math : Double
     var takers : Double
