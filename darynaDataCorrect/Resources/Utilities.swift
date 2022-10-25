@@ -7,7 +7,7 @@
 
 import Foundation
 let demoBucket : BucketListItem = BucketListItem(year: 1999, goal: "Take over the world, narf!", creature: "pinky and the brain")
-let demoGrade : GradeAcess = GradeAcess( Year : 2019, state : "Salt lake", math : 2, takers : 23, verbal : 23, averageGpa : 3.0)
+let demoGrade : GradeAccess = GradeAccess( Year : 2019, state : "Salt lake", math : 2, takers : 23, verbal : 23, averageGpa : 3.0)
 let randomInfoURL = Bundle.main.url(forResource: "", withExtension: "pdf")!
 let dataViolationsURL = Bundle.main.url(forResource: "", withExtension: "pdf")!
 func generateRandomEmoji (of emojiType: String) -> String

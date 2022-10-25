@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct GradeAcess
+struct GradeAccess
 {
     var Year : Int
     var state : String
