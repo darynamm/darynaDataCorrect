@@ -27,6 +27,7 @@
 		93D67DBF2908299200F531DE /* GradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D67DBE2908299200F531DE /* GradeView.swift */; };
 		93D67DC12908332800F531DE /* GradeAccessRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D67DC02908332800F531DE /* GradeAccessRowView.swift */; };
 		93D67DC32908368100F531DE /* BucketStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D67DC22908368100F531DE /* BucketStore.swift */; };
+		93D67DC529083D5F00F531DE /* GradeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D67DC429083D5F00F531DE /* GradeStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		93D67DBE2908299200F531DE /* GradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeView.swift; sourceTree = "<group>"; };
 		93D67DC02908332800F531DE /* GradeAccessRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeAccessRowView.swift; sourceTree = "<group>"; };
 		93D67DC22908368100F531DE /* BucketStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketStore.swift; sourceTree = "<group>"; };
+		93D67DC429083D5F00F531DE /* GradeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				9329107128FD987400C9CAB7 /* BucketListItem.swift */,
 				936CCC762900509B00A94F13 /* GradeAccess.swift */,
 				93D67DC22908368100F531DE /* BucketStore.swift */,
+				93D67DC429083D5F00F531DE /* GradeStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				93D67DBF2908299200F531DE /* GradeView.swift in Sources */,
 				9329106F28FD960900C9CAB7 /* Utilities.swift in Sources */,
 				9329107728FDA20200C9CAB7 /* DataView.swift in Sources */,
+				93D67DC529083D5F00F531DE /* GradeStore.swift in Sources */,
 				9351F29828F5AA470087661E /* darynaDataCorrectApp.swift in Sources */,
 				93D67DC32908368100F531DE /* BucketStore.swift in Sources */,
 				9329107228FD987400C9CAB7 /* BucketListItem.swift in Sources */,
