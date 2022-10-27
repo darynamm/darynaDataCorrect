@@ -79,7 +79,7 @@ func loadJSON (from file : String) -> [Any]
                 let results = try decoder.decode([BucketListItem].self, from: data)
                 return results
             }
-            else if (file == "gradeAccessSimplified")
+            else if (file == "simpleschoolscores")
             {
                 let results = try decoder.decode([GradeAccess].self, from: data)
                 return results

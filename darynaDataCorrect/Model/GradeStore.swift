@@ -11,8 +11,8 @@ import Combine
 
 class GradeStore : ObservableObject
 {
-    @Published var grades : [GradeListItem]
-    init(grades : [GradeListItem])
+    @Published var grades : [GradeAccess]
+    init(grades : [GradeAccess])
     {
         self.grades = grades
     }

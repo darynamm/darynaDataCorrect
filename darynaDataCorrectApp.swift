@@ -11,7 +11,7 @@ import SwiftUI
 struct darynaDataCorrectApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DataView()
         }
     }
 }
