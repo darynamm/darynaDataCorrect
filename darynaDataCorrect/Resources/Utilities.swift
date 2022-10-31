@@ -9,7 +9,7 @@ import Foundation
 //MARK: - Preview Values
 
 let demoBucket : BucketListItem = BucketListItem(year: 1999, goal: "Take over the world, narf!", creature: "pinky and the brain")
-let demoGrade : GradeAccess = GradeAccess( year : 2019, state : "Salt lake", math : 2, takers : 23, verbal : 23, averageGpa : 3.0)
+let demoGrade : GradeAccess = GradeAccess( year : 2019, state : "Salt lake", math : 2, takers : 23, verbal : 23, averageGpa : 3.0, academicyears : 1.8, AcademicGPA : 3.32, englishGPA : 3.8, foreignlanguageGPA : 3.29, foreighnlanguageyears : 2.8, mathGPA : 3.05, mathyears : 3.7, scienceGPA : 3.2)
 
 //MARK: - Internal URLS for files
 let randomInfoURL = Bundle.main.url(forResource: "", withExtension: "pdf")!

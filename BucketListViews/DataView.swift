@@ -25,6 +25,7 @@ struct DataView: View {
                         bucket in
                         BucketRowView(rowBucket: bucket, emoji: generateRandomEmoji(of: ""))
                     }
+                    .onDelete(perform: removeBucketItems)
                 }
                 Section(header: Text("custom"))
                 {
@@ -45,7 +46,7 @@ struct DataView: View {
     
     private func removeBucketItems(at offsets : IndexSet) -> Void
     {
-        
+        storedBuckets.buckets.remove(atOffsets: offsets)
     }
 }
 
