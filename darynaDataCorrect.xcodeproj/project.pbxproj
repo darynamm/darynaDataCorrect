@@ -31,6 +31,7 @@
 		93D67DC32908368100F531DE /* BucketStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D67DC22908368100F531DE /* BucketStore.swift */; };
 		93D67DC529083D5F00F531DE /* GradeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D67DC429083D5F00F531DE /* GradeStore.swift */; };
 		93DDC86C29101B7400E4134E /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DDC86B29101B7400E4134E /* InputField.swift */; };
+		93DDC86E29101E8600E4134E /* AddBucketListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DDC86D29101E8600E4134E /* AddBucketListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		93D67DC22908368100F531DE /* BucketStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketStore.swift; sourceTree = "<group>"; };
 		93D67DC429083D5F00F531DE /* GradeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeStore.swift; sourceTree = "<group>"; };
 		93DDC86B29101B7400E4134E /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
+		93DDC86D29101E8600E4134E /* AddBucketListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBucketListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			children = (
 				9329107428FD9D6600C9CAB7 /* BucketRowView.swift */,
 				9329107628FDA20200C9CAB7 /* DataView.swift */,
+				93DDC86D29101E8600E4134E /* AddBucketListItem.swift */,
 			);
 			path = BucketListViews;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				935BD579290ADAC3000E26DE /* GradeAccessDataStore.swift in Sources */,
 				9351F29A28F5AA470087661E /* ContentView.swift in Sources */,
 				93D67DC12908332800F531DE /* GradeAccessRowView.swift in Sources */,
+				93DDC86E29101E8600E4134E /* AddBucketListItem.swift in Sources */,
 				93D67DBF2908299200F531DE /* GradeView.swift in Sources */,
 				9329106F28FD960900C9CAB7 /* Utilities.swift in Sources */,
 				9329107728FDA20200C9CAB7 /* DataView.swift in Sources */,
