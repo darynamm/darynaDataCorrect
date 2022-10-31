@@ -9,7 +9,8 @@ import SwiftUI
 
 struct AddBucketListItem: View
 {
-    //@ObservedObject var storedBuckets : BucketStore
+    @Environment(\.dismiss) var dismiss
+    @ObservedObject var storedBuckets : BucketStore
     @State var author : String = ""
     @State var bucketListItem : String = ""
     var body: some View
@@ -21,19 +22,31 @@ struct AddBucketListItem: View
                 .foregroundColor(.purple)
                 .multilineTextAlignment(.center))
             {
-                InputField(title: "", hint: "", result: $author)
-                InputField(title: "", hint: "", result: $bucketListItem)
+                InputField(title: "creature", hint: "who made this goal", result: $author)
+                InputField(title: "the goal!!!!", hint: "what do you wanna do?", result: $bucketListItem)
+            }
+            if (!author.isEmpty && !bucketListItem.isEmpty)
+            {
+                Button("add me to the data store", action: addBucketItemToDataStore)
+                    .padding(.horizontal,50)
             }
         }
         
     }
-}
-
-struct AddBucketListItem_Previews: PreviewProvider
-{
     
-    static var previews: some View
+    private func addBucketItemToDataStore() -> Void
     {
-        AddBucketListItem()
+        let year = Calendar.current.component(.year, from: Date())
+        let newBucketListItem : BucketListItem = BucketListItem(year: year, goal: bucketListItem, creature: author)
+        storedBuckets.buckets.insert(newBucketListItem, at: 0)
     }
 }
+
+//struct AddBucketListItem_Previews: PreviewProvider
+//{
+    
+  //  static var previews: some View
+  //  {
+       // AddBucketListItem()
+  //  }
+//}
