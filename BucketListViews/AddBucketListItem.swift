@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct AddBucketListItem: View
+struct AddBucketListItemView: View
 {
     @Environment(\.dismiss) var dismiss
-    @ObservedObject var storedBuckets : BucketStore
+    @EnvironmentObject var storedBuckets : BucketStore
     @State var author : String = ""
     @State var bucketListItem : String = ""
     var body: some View
@@ -42,11 +42,12 @@ struct AddBucketListItem: View
     }
 }
 
-//struct AddBucketListItem_Previews: PreviewProvider
-//{
+struct AddBucketListItem_Previews: PreviewProvider
+{
     
-  //  static var previews: some View
-  //  {
-       // AddBucketListItem()
-  //  }
-//} 
+   static var previews: some View
+   {
+        AddBucketListItemView()
+           .environmentObject(BucketStore(buckets: loadJSON(from: "Buckets 2022") as! [BucketListItem] ))
+   }
+}
