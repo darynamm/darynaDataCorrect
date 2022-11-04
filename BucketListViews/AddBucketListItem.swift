@@ -39,7 +39,10 @@ struct AddBucketListItemView: View
         let year = Calendar.current.component(.year, from: Date())
         let newBucketListItem : BucketListItem = BucketListItem(year: year, goal: bucketListItem, creature: author)
         storedBuckets.buckets.insert(newBucketListItem, at: 0)
+        
+        dismiss()
     }
+    
 }
 
 struct AddBucketListItem_Previews: PreviewProvider

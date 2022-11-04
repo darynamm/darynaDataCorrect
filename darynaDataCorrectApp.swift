@@ -8,10 +8,15 @@
 import SwiftUI
 
 @main
-struct darynaDataCorrectApp: App {
-    var body: some Scene {
+struct darynaDataCorrectApp: App
+{
+    @StateObject private var storedBuckets : BucketStore =
+    BucketStore(buckets: loadJSON(from: "Buckets2022") as! [BucketListItem])
+    var body: some Scene
+    {
         WindowGroup {
             DataView()
+                .environmentObject(storedBuckets)
         }
     }
 }
