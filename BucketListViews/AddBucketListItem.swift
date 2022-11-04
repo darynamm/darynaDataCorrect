@@ -31,7 +31,7 @@ struct AddBucketListItem: View
                     .padding(.horizontal,50)
             }
         }
-        
+        .navigationTitle("Adding a bucket list item")
     }
     
     private func addBucketItemToDataStore() -> Void
@@ -49,4 +49,4 @@ struct AddBucketListItem: View
   //  {
        // AddBucketListItem()
   //  }
-//}
+//} 

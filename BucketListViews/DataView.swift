@@ -13,6 +13,24 @@ struct DataView: View {
     BucketStore(buckets: loadJSON(from: "Buckets2022") as! [BucketListItem])
     
     @ObservedObject var gradeStore = GradeAccessDataStore(gradeData: loadJSON(from: "simpleschoolscores") as! [GradeAccess])
+    @State private var showAddBucketListItem : Bool = false
+    @State private var searchedText : String = ""
+
+    private var filteredBucketListResults : [BucketListItem]
+    {
+        if (searchedText.isEmpty)
+        {
+            return storedBuckets.buckets
+        }
+        else
+        {
+            return storedBuckets.buckets.filter
+            {
+                $0.goal.lowercased().contains(searchedText.lowercased()) ||
+                $0.creature.lowercased().contains(searchedText.lowercased())
+            }
+        }
+    }
     var body: some View {
         NavigationView
         {
