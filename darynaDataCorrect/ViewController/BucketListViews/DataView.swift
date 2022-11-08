@@ -57,8 +57,7 @@ struct DataView: View {
                 }
                 Section(header: Text("project data"))
                 {
-                    NavigationLink("random", destination: CustomPDFView(
-                    ))
+                    NavigationLink("random", destination: CustomPDFView(title: "PDF title", displayedPDFURL: randomInfoURL))
                     
                 }
             }
