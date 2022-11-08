@@ -8,8 +8,19 @@
 import SwiftUI
 import PDFKit
 struct CustomPDFView: View {
+    let title : String
+    let displayedPDFURL: URL
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Text(title)
+                .accessibilityLabel("Title of PDF")
+                .accessibilityValue(title)
+            PDFKitRepresentedView(documentURL: displayedPDFURL)
+                .accessibilityLabel("PDF from: \(displayedPDFURL)")
+                .accessibilityValue("PDF of: \(displayedPDFURL)")
+            
+        }
     }
 }
 struct PDFKitRepresentedView : UIViewRepresentable
@@ -38,7 +49,8 @@ struct PDFKitRepresentedView : UIViewRepresentable
     }
 }
 struct CustomPDFView_Previews: PreviewProvider {
-    static var previews: some View {
-        CustomPDFView()
+    static var previews: some View
+    {
+        CustomPDFView(title: "PDF title", displayedPDFURL: randomInfoURL)
     }
 }

@@ -12,7 +12,7 @@ struct DataView: View {
     @ObservedObject var storedBuckets : BucketStore =
     BucketStore(buckets: loadJSON(from: "Buckets2022") as! [BucketListItem])
     
-    @ObservedObject var gradeStore = GradeAccessDataStore(gradeData: loadJSON(from: "simpleschoolscores") as! [GradeAccess])
+    @ObservedObject var gradeStore = GradeStore(grades: loadJSON(from: "simpleschoolscores") as! [GradeAccess])
     @State private var showAddBucketListItem : Bool = false
     @State private var searchedText : String = ""
 
@@ -48,15 +48,17 @@ struct DataView: View {
                 }
                 Section(header: Text("custom"))
                 {
-                    ForEach(gradeStore.gradeData.indices, id: \.self)
+                    ForEach(gradeStore.grades.indices, id: \.self)
                     {
                         index in
-                        let currentGrade = gradeStore.gradeData[index]
+                        let currentGrade = gradeStore.grades[index]
                         GradeAccessRowView(rowGradeAccess: currentGrade)
                     }
                 }
                 Section(header: Text("project data"))
                 {
+                    NavigationLink("random", destination: CustomPDFView(
+                    ))
                     
                 }
             }

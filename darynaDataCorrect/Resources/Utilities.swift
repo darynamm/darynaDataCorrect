@@ -12,8 +12,8 @@ let demoBucket : BucketListItem = BucketListItem(year: 1999, goal: "Take over th
 let demoGrade : GradeAccess = GradeAccess( year : 2019, state : "Salt lake", math : 2, takers : 23, verbal : 23, averageGpa : 3.0, academicYears : 1.8, AcademicGPA : 3.32, englishGPA : 3.8, foreignlanguageGPA : 3.29, foreighnlanguageYears : 2.8, mathGPA : 3.05, mathYears : 3.7, scienceGPA : 3.2)
 
 //MARK: - Internal URLS for files
-let randomInfoURL = Bundle.main.url(forResource: "", withExtension: "pdf")!
-let dataViolationsURL = Bundle.main.url(forResource: "", withExtension: "pdf")!
+let randomInfoURL = Bundle.main.url(forResource: "random", withExtension: "pdf")!
+let dataViolationsURL = Bundle.main.url(forResource: "Eqdata collection", withExtension: "pdf")!
 
 //MARK: - Helper methods for random strings
 func generateRandomEmoji (of emojiType: String) -> String

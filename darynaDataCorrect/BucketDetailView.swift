@@ -17,7 +17,7 @@ struct BucketDetailView: View {
             VStack
             {
                 Text("year \(detailedBucket.year)")
-                Image("silver bucket")
+                Image("bucketspic")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                 Text(detailedBucket.creature)
